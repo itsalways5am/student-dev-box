@@ -76,7 +76,7 @@ class { 'dotfiles': }
 
 class { 'rbenv': install_dir => "${home}/.rbenv" }
 #specify ruby version to be default
-$rubyver = '2.0.0-p481'
+$rubyver = '2.1.3'
 
 #install rbenv plugins
 rbenv::plugin { ['sstephenson/ruby-build', 'rkh/rbenv-update', 'sstephenson/rbenv-gem-rehash']: }
